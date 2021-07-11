@@ -1,8 +1,8 @@
-export const Header = () => {
+export const Header = ({ heading, strapline }) => {
   return (
     <header className="Header">
-      <h1 className="Header__h1">super cool guys</h1>
-      <div className="Header__strapline">all the super cool guys and gals</div>
+      <h1 className="Header__h1">{heading}</h1>
+      <div className="Header__strapline">{strapline}</div>
     </header>
   );
 };
