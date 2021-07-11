@@ -1,4 +1,12 @@
 body {
   -webkit-font-smoothing: antialiased;
-  background: red;
+  background: $grey;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: $black;
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 400;
 }

@@ -1,17 +1,16 @@
-import Link from "next/link";
-import WithApollo from "../lib/with-apollo";
-import Name from "../components/Name";
+import Cards from "../components/Cards";
+import LoadMoreButton from "../components/LoadMoreButton";
+import useSuperCoolGuys from "../hooks/useSuperCoolGuys";
 
-const Page = () => (
-  <div>
-    Welcome, <Name />
-    <br />
-    <br />
-    <Link href="/about">
-      <a>About</a>
-    </Link>
-    aasdafsd
-  </div>
-);
+const Page = () => {
+  const { loadMore, superCoolGuys } = useSuperCoolGuys();
 
-export default WithApollo(Page);
+  return (
+    <>
+      <Cards data={superCoolGuys} />
+      <LoadMoreButton onClick={loadMore} />
+    </>
+  );
+};
+
+export default Page;

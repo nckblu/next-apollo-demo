@@ -1,0 +1,12 @@
+.MainLayout {
+  max-width: 1000px;
+  padding: 30px;
+  margin: 0 auto;
+  position: relative;
+
+  &__main {
+    background-color: $white;
+    padding: 30px 30px 120px;
+    min-height: 400px;
+  }
+}

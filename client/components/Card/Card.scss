@@ -1,0 +1,27 @@
+.Card {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    .Card__inner {
+      color: $white;
+      background: $black;
+    }
+  }
+
+  &__inner {
+    border: 1px solid $grey;
+    padding: 20px;
+  }
+
+  &__h2 {
+    font-size: 20px;
+  }
+
+  &__address {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}

@@ -1,5 +1,6 @@
 @import "/styles/global.scss";
-
-body {
-  background: red !important;
-}
+@import "/layouts/MainLayout/MainLayout.scss";
+@import "/components/Header/Header.scss";
+@import "/components/Card/Card.scss";
+@import "/components/Cards/Cards.scss";
+@import "/components/LoadMoreButton/LoadMoreButton.scss";
