@@ -13,7 +13,9 @@ app.use(
 app.get("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 
 const port = process.env.PORT || 5000;
-app.listen(port, (err) => {
+const host = "0.0.0.0";
+
+app.listen(port, host, (err) => {
   if (err) throw err;
   console.log("super cool guys coming your way");
   setTimeout(() => {
