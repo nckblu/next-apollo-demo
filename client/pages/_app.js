@@ -3,8 +3,12 @@ import "reset-css/reset.css";
 import "../styles/app.scss";
 import MainLayout from "../layouts/MainLayout";
 
+const apiUrl = process.env.API_URL
+  ? process.env.API_URL
+  : "http://localhost:5000/graphql";
+
 const client = new ApolloClient({
-  uri: "http://localhost:5000/graphql",
+  uri: apiUrl,
   cache: new InMemoryCache(),
 });
 
