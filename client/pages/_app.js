@@ -3,8 +3,8 @@ import "reset-css/reset.css";
 import "../styles/app.scss";
 import MainLayout from "../layouts/MainLayout";
 
-const apiUrl = process.env.API_URL
-  ? process.env.API_URL
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
+  ? process.env.NEXT_PUBLIC_API_URL
   : "http://localhost:5000/graphql";
 
 const client = new ApolloClient({
