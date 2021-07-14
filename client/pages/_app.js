@@ -5,7 +5,7 @@ import MainLayout from "../layouts/MainLayout";
 
 const apiUrl = process.env.NEXT_PUBLIC_API_URL
   ? process.env.NEXT_PUBLIC_API_URL
-  : "http://localhost:5000/graphql";
+  : "https://supercoolguys-api.herokuapp.com/graphql";
 
 const client = new ApolloClient({
   uri: apiUrl,
